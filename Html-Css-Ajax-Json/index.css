@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Header */
+.logo-superior{
+    text-align: center;
+    background-color: #374B70;
+    background-image: url(img/ufc.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    max-width: auto;
+    min-width: auto;
+    padding:5px;
+
+}
+
+.barra-superior{
+    overflow: hidden;
+    background-color: #374B70;
+}
+.barra-superior ul{
+    list-style-type: none;
+}
+
+.barra-superior ul li a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    padding: 16px;
+}
+
+.barra-superior >ul>li>a{
+    text-decoration: none;
+}
+
+.barra-superior ul li a:hover{
+    color: #374B70;
+    background-color: rgb(252, 250, 249);
+}
+
+.conteudo{
+    background-color: #14BFD6; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    size: 100px;
+    text-align: center;
+    height: 50vh;   
+    padding-top: 10%;
+    color: white;
+}

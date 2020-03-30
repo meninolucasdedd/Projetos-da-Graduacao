@@ -1,0 +1,48 @@
+<h2>Editar Professor</h2>
+<hr>
+<form (ngSubmit)="onSubmit(editForm)" #editForm="ngForm">
+    
+
+  <div class="form-group">
+    <label for="nome" [ngClass]="{'text-danger': editForm.submitted && nome.invalid }">Nome:</label>
+    <input type="text" class="form-control" name="nome" id="nome"
+    [(ngModel)]="professor.nome"
+    #nome="ngModel" required
+    [ngClass]="{ 'is-invalid': editForm.submitted && nome.invalid }">
+
+    <div *ngIf="nome.invalid && editForm.submitted" class="text-danger mt-1">
+      <div *ngIf="nome.errors['required']">O nome é obrigatório.</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="titulacao" [ngClass]="{'text-danger': editForm.submitted && titulacao.invalid }">Titulação:</label>
+    <input type="text" class="form-control" name="titulacao" id="titulacao"
+    [(ngModel)]="user.titulacao"
+    #titulacao="ngModel" required
+    [ngClass]="{ 'is-invalid': editForm.submitted && titulacao.invalid }">
+
+    <div *ngIf="titulacao.invalid && editForm.submitted" class="text-danger mt-1" >
+      <div *ngIf="titulacao.errors['required']">Titulação é obrigatório.</div>
+    </div>
+
+  </div>
+
+
+  <div class="form-group">
+    <label for="salario" [ngClass]="{'text-danger': editForm.submitted && salario.invalid }">salario</label>
+    <input type="number" class="form-control" name="salario" id="salario"
+    [(ngModel)]="professor.salario"
+    #salario="ngModel"
+    maxlength="60"
+    [ngClass]="{ 'is-invalid': editForm.submitted && salario.invalid }">
+
+    <div *ngIf="salario.invalid && editForm.submitted" class="text-danger mt-1" >
+      <div *ngIf="salario.errors['required']">Salário é obrigatório</div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Atualizar</button>
+  
+
+</form>

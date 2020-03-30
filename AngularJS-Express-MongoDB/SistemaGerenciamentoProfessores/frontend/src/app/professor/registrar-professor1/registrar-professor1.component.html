@@ -1,0 +1,46 @@
+<h2>Register User</h2>
+<hr>
+<form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
+
+  <div class="form-group">
+    <label for="nome">Nome:</label>
+    <input type="text" class="form-control" name="nome" id="nome"
+    [(ngModel)]="professor.nome"
+    #nome="ngModel" required
+    [ngClass]="{ 'is-invalid': registerForm.submitted && nome.invalid }">
+
+    <div *ngIf="nome.invalid && registerForm.submitted" class="text-danger mt-1">
+      <div *ngIf="nome.errors['required']">O nome é obrigatório.</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="titulacao">Titulação:</label>
+    <input type="text" class="form-control" name="titulacao" id="titulacao"
+    [(ngModel)]="professor.titulacao"
+    #titulacao="ngModel" required
+    [ngClass]="{ 'is-invalid': registerForm.submitted && titulacao.invalid }">
+
+    <div *ngIf="titulacao.invalid && registerForm.submitted" class="text-danger mt-1" >
+      <div *ngIf="titulacao.errors['required']">É necessário inserir uma titulação.</div>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <label for="salario">Zipcode</label>
+    <input type="number" class="form-control" name="salario" id="salario"
+    [(ngModel)]="professor.salario"
+    #salario="ngModel" 
+    maxlength="60"
+    [ngClass]="{ 'is-invalid': registerForm.submitted && salario.invalid }">
+
+    <div *ngIf="salario.invalid && registerForm.submitted" class="text-danger mt-1" >
+      <div *ngIf="salario.errors['required']">Insira um salário.</div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Cadastrar Professor</button>
+  <a [routerLink]="['']" class="ml-2">Login</a>
+
+</form>

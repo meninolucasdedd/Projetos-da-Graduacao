@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.barra-lateral{
+    float: left;
+    font: inherit;
+    background-color: #eeeeee;
+    
+}
+.barra-lateral span{
+    color: #4b5961;
+    padding: 16px;
+
+}
+.barra-direita{
+    float: right;
+    padding: 16px;
+}
+

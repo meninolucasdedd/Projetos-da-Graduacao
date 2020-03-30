@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="meu-id"></div>
+    <div class="minha-div"></div>
+    <div class="minha-div"></div>
+    <script>
+        console.log(document);
+        let minha_div = document.getElementById("meu-id");
+        console.log(minha_div);
+        
+        let divs = document.getElementsByTagName("div");
+        console.log(divs);
+        console.log(divs[0]);
+        console.log(divs[1]);
+        let minhas_divs = document.getElementsByClassName("minha-div");
+        console.log(minhas_divs);
+        let minhas_divs1 = document.querySelectorAll(".minha-div");
+        console.log(minhas_divs1);
+        let minha_div1 = document.querySelector("#meu-id");
+        console.log(minha_div1);
+    </script>
+</body>
+</html>

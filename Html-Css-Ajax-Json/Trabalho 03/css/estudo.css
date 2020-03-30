@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.formulario{
+    overflow: hidden;
+    background-color: blueviolet;
+    padding: 16px;
+
+}
+.formulario, .formulario-input{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-size: 20px;
+   
+}
+input[type=text] {
+    border: 2px solid rgb(0, 255, 242);
+    border-radius: 4px;
+}
+.formulario-input > button{
+    border: none;
+    padding: 16px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px 15px 15px 15px;
+    background-color: red;
+   
+}
+.formulario-input > button:hover{
+    background-color: yellow;
+    color: red;
+}
+
+.container{
+    float: left;
+    background-color: rgb(166, 167, 167);
+    height: 100vh;
+    width: 100vw;
+   
+}
+.post-it{
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(219, 182, 14);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.post-it >p{
+    padding: 16px;
+}

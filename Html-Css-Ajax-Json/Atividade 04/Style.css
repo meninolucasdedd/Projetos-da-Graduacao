@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.logo-nome img {
+    height:50px;
+    width: 390px;
+    padding-left: 5px;
+    
+    
+}
+
+.texto-logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+    text-align: center;
+    letter-spacing: 4px;
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+
+.barra-superior{
+    background-color: #4CAF50;
+    overflow: hidden;
+    box-shadow: 1px 1px 12px #CBCBCB;
+
+}
+.barra-lateral ul{
+    list-style-type: none;
+}
+
+.barra-lateral ul li a{
+    text-decoration: none;
+}
+.barra-superior ul{
+    list-style-type: none;
+}
+
+.dropdown{
+    float: left;
+
+}
+
+
+.dropdown .dropdown-button{
+    padding: 16px;
+    cursor: pointer;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+
+
+.dropdown .dropdown-content{
+    position: absolute;
+    background-color: #F1F1F1;
+    display: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;  
+    
+}
+
+.dropdown .dropdown-content .content-text{
+    letter-spacing: 1.5px;
+}
+
+.dropdown .dropdown-content ul li a{
+    color: black;
+    
+    
+}
+
+.dropdown .dropdown-button:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+.dropdown .dropdown-content ul li a:hover{
+    background-color: #CCCCCC;
+    color: black;
+    
+}
+
+/* .dropdown .dropdown-content .content-text{
+    letter-spacing: 1px;
+    padding: 10px;
+} */
+
+.barra-superior ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    float: left;
+    padding: 16px;
+    width: auto;
+    border: none;
+    outline: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 4px;
+
+}
+
+
+.div-barra-lateral{
+    background-color: white;
+    overflow: hidden;
+    width: 310px;
+    
+    box-shadow:  0px 10px 20px   #CBCBCB;
+  
+
+}
+
+.barra-lateral ul{
+    padding: 10px;
+    padding-left: 16px;
+    
+}
+
+
+
+.barra-lateral ul li a{
+    list-style-type: none;
+    padding-left: 15px;
+    
+    
+}
+
+
+.barra-lateral{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 40;
+    font-size: 20;
+    display: block;
+    float: left;
+    letter-spacing: 1.5px;  
+}
+
+.barra-lateral a{
+    letter-spacing: none;
+}
+
+h4{
+    padding: 16px;
+    font-size: 20px;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+.barra-lateral ul{
+    list-style-type: none;
+
+}
+
+.barra-lateral  .barra-lateral ul li a:hover{
+    background-color: rgb(107, 107, 107);
+    cursor: pointer;
+    
+}

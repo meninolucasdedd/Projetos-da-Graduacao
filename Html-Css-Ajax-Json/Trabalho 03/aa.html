@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .gallery{
+            text-align: center;
+        }
+        .gallery .card{
+            display: inline-block;
+            width: 500px;
+            border: 2px solid rgba(100, 100, 100, 0.7);
+            margin: 20px;
+        }
+        .gallery .card .title{
+            background: tomato;
+            font-size: 30px;
+            padding: 10px; 
+        }
+        .gallery .card .company{
+            padding: 20px;
+        }
+        .gallery .card .contact{
+            padding: 20px;
+            background: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle">Exibir</button>
+    <div class="gallery">
+        <!-- <div class="card">
+            <div class="title">Victor Farias</div>
+            <div class="company">Empresa</div>
+            <div class="contact">352387 4985734 68</div>
+        </div> -->
+    </div>
+
+    <script>
+        let toggle_button = document.querySelector(".toggle");
+        let gallery = document.querySelector(".gallery");
+        let show = false;
+        
+        function addCardInterface(name, company_, contact_){
+            let card = document.createElement("div");
+            card.classList.add("card");
+            let title = document.createElement("div");
+            title.classList.add("title");
+            let title_text = document.createTextNode(name);
+            title.appendChild(title_text);
+            let company = document.createElement("div");
+            company.classList.add("company");
+            let company_text = document.createTextNode(company_);
+            company.appendChild(company_text);
+            let contact = document.createElement("div");
+            contact.classList.add("contact");
+            let contact_text = document.createTextNode(contact_);
+            contact.appendChild(contact_text);
+        
+            card.appendChild(title);
+            card.appendChild(company);
+            card.appendChild(contact);
+            gallery.appendChild(card);
+        }
+        let url = "https://jsonplaceholder.typicode.com/users";
+        function getUsers(){
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(xhttp.readyState==4){
+                    let data = JSON.parse(xhttp.responseText);
+                    for(let i=0; i<data.length; i++){
+                        addCardInterface(data[i].name, data[i].company.name, data[i].phone);
+                        toggle_button.innerHTML = "ocultar";
+                    }
+                }
+            }
+            xhttp.open('GET', url, true);
+            xhttp.send();
+        }
+        toggle_button.addEventListener("click",function(){
+            if(show==false){
+                getUsers();
+                show = true;
+            }else{
+                gallery.innerHTML = "";
+                toggle_button.innerHTML = "exibir";
+                show = false;
+            }
+        })
+    </script>
+</body>
+</html>

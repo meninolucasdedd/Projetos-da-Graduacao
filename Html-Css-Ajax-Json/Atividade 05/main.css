@@ -1,0 +1,242 @@
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+.barra-superior{
+    overflow:hidden;
+    background-color: #df15a2;
+    border-bottom:rgb(175, 6, 23);
+    border-bottom-style: solid;
+    border-bottom-width: 2px; 
+}
+.barra-superior ul{
+    list-style-type: none;
+}
+
+.barra-superior > ul > li > .dropdown{
+    float: left;
+}
+.barra-superior ul li a{
+    text-decoration: none;
+    display: block;
+}
+.dropdown{
+    float: left;
+}
+
+.dropdown-content > ul > li > a{
+    text-align: center;
+    list-style-type: none;
+    display: block;
+    padding: 16px;
+    background-color:  rgb(100, 31, 211);
+    color:white;
+    
+    
+}
+
+
+.dropdown-content > ul > li > a:hover{
+    background-color: rgb(221, 20, 54);
+    color:white;
+
+}
+
+
+
+.dropdown .dropdown-button{
+    font-family: "Open Sans";
+    color: white;
+    padding: 16px;    
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.dropdown .dropdown-button:hover{
+    background-color: rgb(255, 255, 255);
+    color:#f01515; 
+
+}
+
+.dropdown ul{
+    list-style-type: none;
+}
+
+
+.dropdown .dropdown-content{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    max-height: 0px;
+    position: absolute;
+    overflow: hidden;
+    transition: max-height 500ms;
+    cursor: pointer;
+    
+    
+    
+    
+}
+.dropdown:hover .dropdown-content{
+    
+    max-height: 300px;
+    
+    
+}
+
+
+.titulo{
+    float:left;
+    color:white;
+    padding: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.mobile .menu{
+    overflow: hidden;
+    display:none;
+    color:white;
+    
+    
+}
+.mobile .menu{
+    float:right;
+}
+
+.dropdown-button-mobile{
+    display: none;
+}
+
+
+.dropdown-content-mobile{
+    display: none;
+}
+@media screen and (max-width: 479px) {
+    .barra-superior{
+        background-color: blueviolet;
+        padding:10px;
+        
+    }
+    .mobile .menu{
+        display:block;
+        float: right;
+        padding: 16px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+
+        
+    }
+    .dropdown-button-mobile{
+        display: block;
+        float: left;
+        padding: 16px;
+        color: white;
+    }
+    .dropdown-button:hover{
+        background-color: #df15a2;
+    }
+    .dropdown-content-mobile{
+        float: left;
+        overflow: hidden;
+        
+    
+    }
+    .dropdown-button-mobile:hover{
+        max-height: 0px;
+        transition: max-height 500ms;
+    }
+    .dropdown-button{
+        display: none;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .mobile .menu:hover{
+        cursor: pointer;
+        background-color: #f01515;
+
+    }
+    .mobile .menu:active{
+        background-color: rgb(226, 43, 134);
+        cursor: pointer;
+
+    }
+    .dropdown-content-mobile > ul > li > a{
+        text-align: center;
+        list-style-type: none;
+        display: block;
+        padding:16px;
+        float: left;
+        width: 100vw;
+        background-color:  rgb(100, 31, 211);
+        color:white;
+        
+        
+    }
+    
+    .barra-lateral{
+        width: 100vw;
+        height: 500px;
+    }
+    
+    
+   
+
+    
+}
+
+@media screen and (min-width: 480px){
+    .barra-lateral{
+        width: 279px;
+    }
+}
+.dropdown{
+    float: left;
+}
+
+.barra-lateral{
+    float: right;
+    height: 100vh;
+    /* width: 290px; */
+    background-color: white;
+    box-shadow: 0px 1px 12px #CBCBCB;
+}
+.barra-lateral ul{
+    list-style-type: none;
+}
+.barra-lateral ul li a{
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+}
+.barra-lateral h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(43, 70, 226);
+}
+
+.barra-lateral h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* .content-body{
+    color:white;
+    display: flex;
+    width: 200px;
+    height:200px;
+    background-color: rgb(0, 77, 128);
+    padding:10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+} */
+

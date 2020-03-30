@@ -1,0 +1,8 @@
+{
+  "name": "Projetos-Graduacao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/meninolucasdedd/Projetos-da-Graduacao.git",
+  "author": "Lucas Silva <lucasimap@alu.ufc.br>",
+  "license": "MIT"
+}

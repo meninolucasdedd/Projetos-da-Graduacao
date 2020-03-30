@@ -1,0 +1,23 @@
+body {
+    background-image: url(/AtividadesLMS2018/ZapWeb/img/ufc.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    position: fixed;
+    
+}
+#divMain{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+#login {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.field {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 5px;
+}

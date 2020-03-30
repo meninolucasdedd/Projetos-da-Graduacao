@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W3School Barra ATVD 04</title>
+   <link href="Style.css" rel="stylesheet">
+
+</head>
+<body class="corpo-da-pagina">
+    <header class="logo-nome">
+        <br>
+        <img src="./W3Schools_logo.png">
+        <div class="texto-logo" margin: 14px 0 -5px 0>O MAIOR SITE DE DESENVOLVEDORES DA WEB</div>
+    </header>
+
+    <nav class="barra-superior">
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <div class="dropdown-button">
+                        TUTORIAL
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <h4>HTML e CSS</h4>
+                            <li class="content-text"><a href="">Aprender HTML</a></li>
+                            <li class="content-text"><a href="">Aprender CSS</a></li>
+                            <li class="content-text"><a href="">Aprender W3.CSS</a></li>
+                            <li class="content-text"><a href="">Aprender Colors</a></li>
+                            <li class="content-text"><a href="">Aprender Bootstrap 3</a></li>
+                            <li class="content-text"><a href="">Aprender Bootstrap 4</a></li>
+                            <li class="content-text"><a href="">Aprender Icones</a></li>
+                            <li class="content-text"><a href="">Aprender Graficos</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+            <li><a href="http://127.0.0.1:5500/">REFERENCIAS</a></li>
+            <li><a href="">EXEMPLOS</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="div-barra-lateral">
+        <nav class="barra-lateral">
+            
+            <h4>HTML e CSS</h4>
+            
+            <ul>
+                <li><a hreaf="">Aprender to HTML</a></li>
+                <li><a hreaf="">Aprender CSS</a></li>
+                <li><a hreaf="">Aprender W3.CSS</a></li>
+                <li><a hreaf="">Aprender Colors</a></li>
+                <li><a hreaf="">Aprender Bootstrap 3</a></li>
+                <li><a hreaf="">Aprender Bootstrap 3</a></li>
+                <li><a hreaf="">Aprender Icons</a></li>
+                <li><a hreaf="">Aprender Graphics</a></li>
+                <li><a hreaf="">How To</li>
+                
+            </ul>
+            <h4>JavaScript</h4>
+            <ul>
+                <li><a hreaf="">Aprender JavaScript</a></li>
+                <li><a hreaf="">Aprender JQuery</a></li>
+                <li><a hreaf="">Aprender AngularJS</a></li>
+                <li><a hreaf="">Aprender JSON</a></li>
+                <li><a hreaf="">Aprender AJAX</a></li>
+                <li><a hreaf="">Aprender W3.JS</a></li>
+                
+            </ul>
+            <h4>Server Side</h4>
+            
+            <ul>
+                <li><a hreaf="">Aprender SQL</a></li>
+                <li><a hreaf="">Aprender PHP</a></li>
+                <li><a hreaf="">Aprender PYTHON</a></li>
+                <li><a hreaf="">Aprender ASP</a></li>
+                <li><a hreaf="">Aprender NODE.js</a></li>
+                <li><a hreaf="">Aprender Raspberry Pi</a></li>
+            </ul>
+            
+            <h4>Web Building</h4>
+            
+            <ul>
+                <li><a hreaf="">Aprender XML</a></li>
+                <li><a hreaf="">Aprender XML AJAX</a></li>
+                <li><a hreaf="">Aprender DOM</a></li>
+                <li><a hreaf="">Aprender DTD</a></li>
+                <li><a hreaf="">Aprender Schema</a></li>
+                <li><a hreaf="">Aprender XSLT</a></li>
+                <li><a hreaf="">Aprender XPath</a></li>
+                <li><a hreaf="">Aprender XQuery</a></li>
+                
+            </ul>
+            
+            <h4>Referencia</h4>
+            
+            <ul>
+                    <li><a hreaf="">HTML Referencia</a></li>
+                    <li><a hreaf="">CSS Referencia</a></li>
+                    <li><a hreaf="">JS Referencia</a></li>
+                    <li><a hreaf="">SQL Referencia</a></li>
+                    <li><a hreaf="">PHP Referencia</li>
+                    <li><a hreaf="">JQuery Referencia</a></li>
+                    <li><a hreaf="">Bootstrap Referencia</a></li>
+                    <li><a hreaf="">W3.CSS Referencia</a></li>
+                    <li><a hreaf="">UTF-8 Referencia</a></li>
+                    
+                </ul>
+        
+    </nav>
+
+    </div>
+
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
